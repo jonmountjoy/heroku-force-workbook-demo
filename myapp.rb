@@ -7,7 +7,7 @@ class MyApp < Sinatra::Base
   enable :sessions
 
   configure do
-    set :session_secret, 'super secret'
+    set :session_secret, ENV['SECRET']
   end
 
   use OmniAuth::Builder do
