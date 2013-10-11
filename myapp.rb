@@ -47,6 +47,7 @@ class MyApp < Sinatra::Base
 
 
   get '/auth/salesforce/callback' do
+    logger.info "#{env["omniauth.auth"]["extra"]["display_name"]} just authenticated"
     credentials = env["omniauth.auth"]["credentials"]
     session['token'] = credentials["token"]
     session['refresh_token'] = credentials["refresh_token"]
