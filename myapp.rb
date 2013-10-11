@@ -3,10 +3,12 @@ require 'force'
 require "omniauth"
 require "omniauth-salesforce"
 
+
 class MyApp < Sinatra::Base
-  enable :sessions
 
   configure do
+    enable :logging
+    enable :sessions
     set :session_secret, ENV['SECRET']
   end
 
@@ -27,10 +29,13 @@ class MyApp < Sinatra::Base
                             client_id:     ENV['SALESFORCE_KEY'],
                             client_secret: ENV['SALESFORCE_SECRET']
     end
+
   end
 
 
   get '/' do
+    logger.info "Creating an account!"
+    client.create("Account", name: "Amazing Accounts at #{Time.now}")
     accounts= client.query("select Id, Name from Account")    
     accounts.map(&:Name).join(',')
   end
