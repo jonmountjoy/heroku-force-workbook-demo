@@ -64,6 +64,10 @@ class MyApp < Sinatra::Base
     'Goodbye - you are now logged out'
   end
 
+  error do
+    "There was an error.  Perhaps you need to re-authenticate to /authenticate ?  Here are the details: " + env['sinatra.error'].name
+  end
+
   run! if app_file == $0
 
 end
