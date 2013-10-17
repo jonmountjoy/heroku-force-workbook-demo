@@ -34,8 +34,7 @@ class MyApp < Sinatra::Base
 
 
   get '/' do
-    logger.info "Creating an account!"
-    client.create("Account", name: "Amazing Accounts at #{Time.now}")
+    logger.info "Visited home page"
     accounts= client.query("select Id, Name from Account")    
     accounts.map(&:Name).join(',')
   end
