@@ -9,6 +9,7 @@ class MyApp < Sinatra::Base
   configure do
     enable :logging
     enable :sessions
+    set :show_exceptions, false
     set :session_secret, ENV['SECRET']
   end
 
@@ -61,6 +62,10 @@ class MyApp < Sinatra::Base
   get '/unauthenticate' do
     session.clear 
     'Goodbye - you are now logged out'
+  end
+
+  error Force::UnauthorizedError do
+    redirect "/auth/salesforce"
   end
 
   error do
