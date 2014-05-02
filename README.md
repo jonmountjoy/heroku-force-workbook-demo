@@ -3,6 +3,8 @@ A really tiny web application that:
 * Performs OAuth with Force.com
 * Allows subsequent calls out to Force.com using the awesome [Force.rb](https://github.com/heroku/force.rb)
 
+Read [Integrating Force.com and Heroku Applications](https://devcenter.heroku.com/articles/integrating-force-com-and-heroku-apps) to learn more about the app. 
+
 ## Running locally
 
 Create a Salesforce Connected App with a callback URL of `http://localhost:5000/auth/salesforce/callback` (see below)
