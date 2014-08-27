@@ -1,0 +1,17 @@
+{
+  "name": "Heroku Force.com API Integration",
+  "repository": "https://github.com/jonmountjoy/heroku-force-workbook-demo/tree/button",
+  "keywords": ["heroku", "salesforce", "force.com"],
+  "env": {
+    "SALESFORCE_KEY": {
+      "description": "Your Salesforce Connected App Key"
+    },
+    "SALESFORCE_SECRET": {
+      "description": "Your Salesforce Connected App Secret"
+    },
+    "SECRET": {
+      "description": "A secret key for encryption",
+      "generator": "secret"
+    }
+  }
+}

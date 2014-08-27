@@ -17,7 +17,7 @@ Create a `.env` file.  Place you Salesforce key and secret from the Salesforce C
     
 Then run bundle to install all gems for this app:
 
-    $bundle
+    $ bundle
 
 Then start the app:
 
@@ -57,3 +57,8 @@ To create a Salesforce Connected App:
   * For "Callback URL" provide the callback URL of your running app.
   * Give the app "Full access" scope
   * The "Consumer Key" and "Consumer Secret" values should be placed in the `.env` file as above.
+
+## Deploy
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/jonmountjoy/heroku-force-workbook-demo/tree/button)
+
