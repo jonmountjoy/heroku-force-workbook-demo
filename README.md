@@ -14,6 +14,10 @@ Create a `.env` file.  Place you Salesforce key and secret from the Salesforce C
     SECRET=some_random_string
     SALESFORCE_KEY=3M234234234234234324234234324323242334324342343q234Zw.IS
     SALESFORCE_SECRET=524444444444468
+    
+Then run bundle to install all gems for this app:
+
+    $bundle
 
 Then start the app:
 
