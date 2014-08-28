@@ -1,5 +1,5 @@
 {
-  "name": "Heroku Force.com API Integration",
+  "name": "Force.com API Sample",
   "keywords": ["heroku", "salesforce", "force.com"],
   "env": {
     "SALESFORCE_KEY": {
