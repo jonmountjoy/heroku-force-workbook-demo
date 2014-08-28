@@ -22,7 +22,7 @@ You need a key/secret in order to integrate with a Salesforce app.  Do this by c
 
 ## Deploying to Heroku
 
-1. Push the button: [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/jonmountjoy/heroku-force-workbook-demo/tree/button)
+1. Push the button: [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 2. Enter the Salesforce Key and Secret when prompted (see below)
 3. Make a note of the app name - for example, `obscure-plains-5853`.
