@@ -1,6 +1,5 @@
 {
   "name": "Heroku Force.com API Integration",
-  "repository": "https://github.com/jonmountjoy/heroku-force-workbook-demo/tree/button",
   "keywords": ["heroku", "salesforce", "force.com"],
   "env": {
     "SALESFORCE_KEY": {
