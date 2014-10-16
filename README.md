@@ -42,6 +42,8 @@ Then run bundle to install all gems for this app:
 
     $ bundle
 
+Make sure that your Connected App uses localhost as its callback URL as noted above.  Set it to http://localhost:5000/auth/salesforce/callback
+
 Then start the app:
 
     $ foreman start
